@@ -28,10 +28,7 @@ const intro = babeViews.view_generator("intro",{
             <br />
             Thank you for participating.
             <br />
-            You are in the <strong>${group}</strong> group.
-            <br />
-            <br />
-            Do not be afraid. Fnord.`,
+            You are in the <strong>${group}</strong> group.`,
    buttonText: 'Proceed'    
 });
 
