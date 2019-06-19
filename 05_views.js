@@ -50,7 +50,7 @@ const instructions = babeViews.view_generator("instructions",{
             <br />
             Please accept both sentences as being true. We then present to you three conclusions
             and ask you to choose whichever conclusion <strong>you think</strong> does follow 
-            from the second sentence (here: "There is a traffic jam.") being given.
+            from the second sentence (here: "There is a traffic jam.") based on the condition.
             <br />
             <br />
             Please read each page carefully and at your own pace before choosing a conclusion.
@@ -123,15 +123,6 @@ const simple = babeViews.view_generator("sentence_choice", {
     trials: trials.simple.length,
     name: 'simple',
     data: _.shuffle(trials.simple)
-},
-{
+}, {
     answer_container_generator: custom_answers.three_sentence_choice
 });
-
-/*
-const additional = babeViews.view_generator("forced_choice", {
-    trials: trial_info.additional.length,
-    name: 'additional',
-    data: _.shuffle(trial_info.additional)
-});
-*/
